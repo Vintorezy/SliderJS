@@ -1,0 +1,1361 @@
+/* Default */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Yeseva One', cursive;
+}
+
+p, a, button, ::placeholder, label, .button {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body { font-family: Arial, Tahoma, Verdana, sans-serif; }
+  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+  
+blockquote, q { quotes: none; }
+blockquote::before, blockquote::after, q::before, q::after { content: ''; content: none; }
+strong { font-weight: bold; } 
+  
+input { outline: none; }
+  
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+  
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+.underline {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-small {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+}
+
+.button {
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    background: #E3B873;
+    border: 1px solid #E3B873;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    padding: 11px 34px;
+    color: #FFF;
+    transition: all .2s linear;
+}
+
+.button:hover {
+    background: transparent;
+    border: 1px solid #E3B873;
+}
+
+.transparent {
+    background: transparent;
+    border-color: #FFF;
+}
+
+.transparent:hover {
+    background: #E3B873;
+}
+
+/* Margins */
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.t-center {
+    text-align: center;
+}
+
+/* Fonts */
+.beige, .active {
+    color: #E3B873;
+}
+
+.active:hover {
+    color: #FFF;
+}
+
+.white {
+    color: #FFF;
+}
+
+.small {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.standart {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.default-heading {
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.info-inner p {
+    line-height: 27px;
+}
+
+.phone {
+    text-decoration: underline;
+}
+
+/* Menu */
+header {
+    background: #131313;
+}
+
+.menu-wrapper {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container .menu {
+    display: flex;
+}
+
+.menu li, .phone  {
+    margin-right: 45px;
+}
+
+.menu .menu-link {
+    transition: all .2s linear;
+    color: #FFF;
+}
+
+.menu .menu-link:hover {
+    color:#E3B873;
+}
+
+.phone {
+    transition: all .2s linear;
+}
+
+
+.phone:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.logo {
+    font-family: 'Nunito Sans';
+}
+
+
+/* Banner Section */
+.main-section {
+    height: 90vh;
+    background: url('/skillfactory/images/main-banner-img.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.main-section::before {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    content: ' ';
+    z-index: -1;
+}
+
+.heading-container {
+    width: 100%;
+}
+
+.heading-container p {
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 100%;
+}
+
+.banner-container h1 {
+    font-size: 40px;
+    line-height: 53px;
+    max-width: 520px;
+    text-transform: uppercase;
+}
+
+.banner-container p {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+    max-width: 520px;
+}
+
+/* Completed Projects */
+.project-section {
+    background: #131313;
+    padding: 100px 0;
+    margin-bottom: -210px;
+    position: relative;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-heading {
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    margin-bottom: 40px;
+}
+
+.project-inner {
+    display: flex;
+}
+
+.info-inner {
+    width: 42%;
+}
+
+.project-info {
+    display: flex;
+}
+
+.project-info-inner {
+    width: 50%;
+}
+
+.project-info-heading {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.project-info-description {
+    color: #FFF;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.project-cities {
+    display: flex;
+}
+
+.active-city {
+    position: relative;
+}
+
+.active-city::before {
+    content: ' ';
+    width: 100%;
+    height: 1px;
+    background: #E3B873;
+    position: absolute;
+    bottom: -10px;
+}
+
+.disabled-city {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.cities-heading {
+    text-transform: uppercase;
+    line-height: 19px;
+    margin: 0 50px 50px 0;
+    cursor: pointer;
+}
+
+.dot-active rect {
+    fill-opacity: 1;
+}
+
+.dot-button, .right-arrow, .left-arrow  {
+    cursor: pointer;
+}
+
+.project-control {
+  display: flex; 
+  max-width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+
+.slider-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+  }
+
+  .slider-content{
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .slider-content-inner {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .slider-content {
+    flex: 0 0 100%;
+  }
+  
+  .navigation {
+    /* position: absolute;
+    bottom: 120px; */
+    text-align: left;
+  }
+
+  .prev-button, .next-button {
+    background-color: transparent;
+    border: 0;
+    width: 40px;
+    height: 15px;;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .prev-button {
+    background-image: url(/images/arrow-left.svg);
+  }
+
+  .navigation-container {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .next-button {
+    margin-left: 200px;
+    background-image: url(/images/arrow-right.svg);
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 2px;
+    left: 105px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #FFF;
+  }
+
+
+/* Video Container */
+.video-inner {
+    position: relative;
+}
+
+.vide-preview {
+    -webkit-filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+}
+
+.play-button {
+    position: absolute;
+    left: calc(50% - 42.5px);
+    top: calc(50% - 42.5px);
+    height: 85px;
+    width: 85px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #E3B873;
+}
+
+.play-button::before {
+    content: ' ';
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    left: 30.5px;
+    top: 28.5px;
+    background: url('/skillfactory/images/icons/play-icon.svg') no-repeat;
+    background-position: center center;
+}
+
+
+/* Callback section */
+.callback-section {
+    padding-top: 270px;
+    margin-top: -210px;
+    background: #FFF;
+    margin-bottom: 150px;
+}
+
+.callback-container p {
+    max-width: 680px;
+    font-size: 18px;
+    line-height: 36px;
+    margin: 0 auto;
+}
+
+.callback-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+
+.phone-input, .name-input, .email-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding: 10px 0;
+    background: transparent;
+}
+
+.form-inner label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.phone-input::placeholder, .name-input::placeholder {
+    color: #363636;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.callback-button {
+    padding: 20px 75px;
+    font-size: 13px;
+}
+
+.callback-button:hover {
+    color: #363636;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.checkbox{
+    display: none;
+}
+
+.fake{
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+    margin-right: 5px;
+}
+
+.fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before{
+    opacity: 1;
+}
+
+
+/* Types of repair */
+.repair-types-container {
+    display: flex;
+}
+
+.types-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33.33%;
+    margin-right: 30px;
+}
+
+.types-inner:last-child {
+    margin-right: 0;
+}
+
+.types-inner img {
+    z-index: -1;
+}
+
+.types-info-container {
+    width: 100%;
+    padding: 25px 35px 40px 35px;
+    background: #FFF;
+    margin: -80px 30px 0 30px;
+    z-index: 10;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.types-info-heading {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.types-info-list {
+    margin: 15px 0;
+}
+
+.types-info-list li {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.types-price-container {
+    margin: -30px 31px 0 31px;
+    padding: 15px 20px;
+    background: #E3B873;
+    z-index: 15;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    text-transform: uppercase;
+}
+
+.repair-types-section {
+    margin-bottom: 250px;
+}
+
+
+/* Advantage Section */
+.advantage-section {
+    background: url('/skillfactory/images/advantage-bg.png') no-repeat;
+    background-position: left center;
+    padding: 20px 0;
+}
+
+.advantage-callback {
+    background: #131313;
+    padding: 30px 50px;
+    width: 80%;
+}
+.advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantage-list-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.advantage-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.advantage-number {
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: #E3B873;
+    text-align: center;
+    line-height: 42px;
+    font-family: 'Yeseva One';
+    border-radius: 50px;
+    margin-right: 20px;
+    border: 8px solid #FFF;
+}
+
+.advantage-callback-form .form-inner {
+    width: 100%;
+}
+
+.advantage-callback-form .form-inner label {
+    color: #FFF;
+    opacity: 0.5;
+
+}
+
+.advantage-callback-form input::placeholder {
+    color: #FFF;
+}
+
+.advantage-button:hover {
+    color: #FFF;
+}
+
+.advantage-callback-heading {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: 'Nunito Sans';
+    display: block;
+    text-align: center;
+}
+
+.callback-button-wrapper {
+    text-align: right;
+}
+
+
+/* Promo Section */
+.promo-section {
+    margin-bottom: 250px;
+}
+
+.promo-callback-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.promo-inner {
+    display: flex;
+    align-items: center;
+}
+
+.promo-icon {
+    width: 72px;
+    height: 72px;
+    background: #E3B873;
+    border-radius: 50px;
+    position: relative;
+}
+
+.promo-icon::before {
+    content: ' ';
+    background: url('/skillfactory/images/icons/money-pig-promo.svg') no-repeat;
+    width: 72px;
+    height: 72px;
+    background-position: center;
+    position: absolute;
+}
+
+.promo-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-inner:last-child {
+    width: 45%;
+}
+
+.promo-text {
+    color: #E3B873;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 25px;
+}
+
+/* Photo Projects Section */
+.photo-projetcs-section {
+    position: relative;
+    background: url('/skillfactory/images/projects-photo-bg.png') no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.photo-projects-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+    margin-bottom: 110px;
+}
+
+.photo-projetcs-section::before {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: -1;
+}
+
+.projects-list-item {
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.list-disabled {
+    color: #FFF;
+}
+
+.photo-container {
+    display: flex;
+    width: 65%;
+}
+
+.projects-preview {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.projects-preview:first-child {
+    margin: -100px 40px -100px 0;
+}
+
+.projects-preview:last-child {
+    margin-top: -160px;
+}
+
+/* Our Clients Section */
+.our-clients-reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-clients-section {
+    padding-bottom: 400px;
+    background: url('/skillfactory/images/our-clients-bg.svg') repeat-x bottom;
+}
+
+
+.reviews-inner {
+    background: #FFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding: 20px;
+    max-width: 335px;
+}
+
+.reviews-top, .reviews-bottom, .reviews-numbers {
+    display: flex;
+    align-items: center;
+}
+
+.reviews-photo {
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.reviews-text {
+    color: #959595;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.reviews-bottom {
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    width: 80%;
+    margin-top: -30px;
+}
+
+.reviews-numbers {
+    padding: 13px;
+    background: #E3B873;
+    width: 50%;
+}
+
+.reviews-numbers:first-child {
+    border-right: 1px solid #FFF;
+}
+
+.reviews-numbers img {
+    margin-right: 15px;
+}
+
+.reviews-heading {
+    font-size: 17px;
+    line-height: 24px;
+    max-width: 180px;
+}
+
+.reviews-numbers img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Bottom Section */
+.form-section {
+    display: flex;
+    z-index: 10;
+}
+
+.form-section .container-small {
+    z-index: 10;
+}
+
+.bottom-section {
+    background: url('/skillfactory/images/bottom-container-bg.jpg') no-repeat;
+    background-size: cover;
+    padding: 250px 0 100px 0;
+    margin-top: -250px;
+    display: flex;
+    z-index: 0;
+    position: relative;
+}
+
+.bottom-section::before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.bottom-form-container {
+    margin: 0 auto;
+    background: #131313;
+    padding: 30px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 880px;
+    margin-top: -250px;
+}
+
+.bottom-callback-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.half {
+    width: calc(50% - 50px) !important;
+}
+
+.bottom-callback-form .first-checkbox {
+    width: 100%;
+}
+
+.advantage-callback-form .callback-button-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.bottom-container h4 {
+    margin: 40px 0 30px 0;
+}
+
+.bottom-container a {
+    font-family: 'Yeseva One';
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon-inner {
+    background: #E3B873;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.social-icon-inner:first-child {
+    margin-right: 15px;
+}
+
+.social-icons {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: calc(50% - 8px);
+}
+
+.inst {
+    left: calc(50% - 7px);
+}
+
+footer {
+    background: #181818;
+}
+
+/* Mobile */
+@media only screen
+and (min-width: 320px)
+and (max-width: 480px) {
+    /* General */
+    .mh-br, .menu-container, .callback, .project-control, .mobile-hidden, .advantage-section, .our-clients-section, .promo-section, .photo-projetcs-section, footer {
+        display: none;
+    }
+
+   .project-info-description {
+        font-size: 11px;
+    }
+
+    .default-heading {
+        font-size: 22px;
+        line-height: 138%;
+    }
+
+    .projects-heading, .projects-inner p {
+        text-align: center;
+    }
+
+    .projects-container, .repair-types-container, .callback-form {
+        flex-wrap: wrap;
+    }
+
+    /* Header */
+    .phone {
+        color: #FFF;
+        text-decoration: none;
+        margin-right: 0;
+    }
+
+    .banner-container, .main-section {
+        height: 480px;
+    }
+
+    .banner-container h1 {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .banner-container p {
+        font-size: 14px;
+        line-height: 135%;
+    }
+
+    .main-section .btns-container,.main-section .btns-container button {
+        width: 100%;
+        padding: 19px 0;
+        border-radius: 0;
+    }
+
+    .btns-container button:first-child {
+        margin-bottom: 25px;
+    }
+
+    /* Projects */
+    .project-section {
+        padding-top: 35px;
+    }
+
+    .projects-inner p {
+        font-size: 11px;
+        line-height: 158%;
+    }
+
+    .info-inner, .projects-inner {
+        width: 100%;
+    }
+
+    .projects-heading {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .project-info-inner p {
+        text-align: left;
+    }
+
+    .projects-slider-img {
+        width: 100%;
+    }
+
+    .mobile-projects-slider {
+        position: relative;
+    }
+
+    .mobile-slider-control {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        top: calc(50% - 18px);
+    }
+
+    .mobile-left-control {
+        margin-left: 13px;
+    }
+
+    .mobile-right-control {
+        margin-right: 13px;
+    }
+
+    .project-info-heading {
+        font-size: 14px;
+        line-height: 138%;
+    }
+
+    .project-info-description {
+        line-height: 135%;
+    }
+
+
+    /* CallBack Section */
+    .callback-section {
+        background: #131313;
+        padding-top: 230px;
+        margin-bottom: 100px;
+    }
+
+    .callback-container p {
+        font-size: 11px;
+        line-height: 170%;
+        color: #FFF;
+    }
+
+    .callback-form .form-inner {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .callback-section .icon-centered {
+        margin-bottom: 20px
+    }
+
+    .form-inner label {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .phone-input, .name-input, .email-input {
+        border-bottom: 1px solid #FFF;
+    }
+
+    ::placeholder {
+        color: #FFF !important;
+    }
+
+    .name-input {
+        margin-bottom: 60px;
+    }
+
+    .phone-input {
+        margin-bottom: 25px;
+    }
+
+    .first-checkbox {
+        width: 100%;
+        text-align: left;
+        color: #FFF;
+        margin-bottom: 60px;
+    }
+    
+    .callback-button {
+        width: 100%;
+        margin-bottom: -28.5px;
+        border-radius: 0;
+    }
+
+    /*Types of Repair */
+    .types-inner {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .types-info-container {
+        margin-left: 0;
+    }
+
+    .repair-types-section {
+        margin-bottom: 40px;
+    }
+
+    .types-price-container {
+        margin-left: 0;
+    }
+
+    /* Projects */
+    .photo-projetcs-section-mobile {
+        margin-bottom: -135px;
+    }
+
+    /* Bottom Form */
+    .form-section {
+        background: #131313;
+    }
+
+    .bottom-form-container {
+        margin-top: 0;
+        padding: 140px 0 50px 0;
+    }
+
+    .form-section .container-small {
+        z-index: 0;
+    }
+
+    .mobile-projects-slider {
+        z-index: 10;
+    }
+
+    /* Bottom Section */
+    .bottom-section {
+        margin-top: 0;
+        background: #131313;
+        padding: 20px 0;
+    }
+
+    .bottom-section::before {
+        display: none;
+    }
+
+    .half {
+        width: 100% !important;
+    }
+
+    .advantage-callback-form .form-inner {
+        margin-right: 0;
+    }
+
+    .advantage-callback-form .form-inner.mb-60 {
+        margin-bottom: 20px;
+    }
+
+    .bottom-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .map-container {
+        order: 1;
+    }
+
+    .bottom-container h4 {
+        order: 2;
+    }
+
+    .bottom-container .social-icons-container {
+        order: 3;
+    }
+
+    .social-icon-inner {
+        width: 39px;
+        height: 39px;
+    }
+
+    .bottom-container .default-heading {
+        font-size: 18px;
+    }
+}
+
+/* Tablet */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px) {
+    /* General */
+    .menu-container, .tablet-hidden {
+        display: none;
+    }
+    
+    /* Banner */
+    .main-section {
+        height: 50vh;
+    }
+
+    /* Projects */
+    .projects-container {
+        flex-wrap: wrap;
+    }
+
+    .info-inner {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .project-control {
+        margin: 60px auto;
+    }
+
+    .projects-inner, .project-photos img {
+        width: 100%;
+    }
+
+    .project-cities {
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .project-cities h4 {
+        margin: 0;
+    }
+
+    /* Video Container */
+    .video-container {
+        padding-top: 40px;
+    }
+
+    /* Types of Repair */
+    .repair-types-section {
+        margin-bottom: 130px;
+    }
+
+    .types-info-container {
+        padding: 25px 10px 40px 10px;
+        margin: -80px 0 0 0px;
+    }
+
+    .types-price-container {
+        margin-left: 0;
+    }
+
+    /* Advantage Container */
+    .advantage-container {
+        flex-wrap: wrap;
+    }
+
+    .advantage-list {
+        margin-bottom: 40px;
+    }
+
+    .advantage-list-inner {
+        width: 50%;
+    }
+
+    .advantage-list-inner:first-child, .advantage-list-inner:last-child {
+        width: 100%;
+    }
+
+    .advantage-callback {
+        width: 100%;
+    }
+
+    .promo-section {
+        margin-bottom: 180px;
+    }
+
+    .promo-container {
+        justify-content: center;
+    }
+
+    .promo-container .promo-inner:first-child {
+        display: none;
+    }
+
+    /* Projects */
+    .photo-projects-container {
+        flex-wrap: wrap;
+    }
+
+    .photo-container {
+        width: 100%;
+    }
+
+    .photo-projects-inner h3 {
+        text-align: center;
+    }
+
+    .projects-preview:first-child, .projects-preview:last-child {
+        margin: 0;
+    }
+
+    .projects-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /* Reviews Inner */
+    .reviews-inner {
+        max-width: 100%;
+    }
+
+    .reviews-top {
+        justify-content: center;
+    }
+
+    .reviews-text {
+        text-align: center;
+    }
+
+    .reviews-bottom {
+        margin: -30px auto;
+        position: relative;
+    }
+
+    .reviews-inner {
+        position: relative;
+    }
+
+    .reviews-inner::before {
+        content: ' ';
+        background: url('/skillfactory/images/icons/mobile-slider-left.svg') no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: -15px;
+        left: 20px;
+    }
+
+    .reviews-inner::after {
+        content: ' ';
+        background: url('/skillfactory/images/icons/mobile-slider-right.svg') no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: -15px;
+        right: 20px;;
+    }
+}
+
+/* Desktop */
+@media (min-width: 480px) {
+    .desktop-hidden {
+        display: none;
+    }
+
+    .banner-container .btns-container button:first-child {
+        margin-right: 20px;
+    }
+}
